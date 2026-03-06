@@ -1,0 +1,77 @@
+# Secrets - NEVER commit these
+*.key
+*.pem
+*.crt
+*.pub
+*.secret
+*.token
+*.env
+*.env.local
+*.env.*.local
+
+# SSH keys
+*.pem
+id_rsa*
+id_ed25519*
+known_hosts
+authorized_keys
+
+# API Keys
+api_keys/
+credentials.json
+*.credentials
+
+# Backup files with secrets
+*.bak
+*.backup
+*-secret-*
+*secret*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs with potential secrets
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Build outputs
+dist/
+build/
+*.o
+*.so
+
+# Package files
+*.tar.gz
+*.zip
+*.deb
+*.rpm
+
+# Test coverage
+coverage/
+.coverage
+htmlcov/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
