@@ -119,7 +119,7 @@ EOF
     
     # Create archive
     local archive="${BACKUP_DIR}/backup_${timestamp}.tar.gz"
-    tar -czf "$archive" -C "$(dirname "$backup_path)" "$(basename "$backup_path")"
+    tar -czf "$archive" -C "$(dirname "$backup_path")" "$(basename "$backup_path")"
     rm -rf "$backup_path"
     
     success "Backup created: $archive"
